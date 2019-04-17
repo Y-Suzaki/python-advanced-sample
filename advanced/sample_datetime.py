@@ -1,4 +1,5 @@
 from datetime import datetime, timezone, timedelta
+from dateutil.tz import gettz
 
 #
 # ロカールのタイムゾーンで取得、今回はJSTになる
@@ -21,3 +22,13 @@ print(datetime_utc_obj.strftime('[UTC] %Y/%m/%d %H:%M:%S.%f'))
 timezone_jst = timezone(timedelta(hours=+9), 'JST-TIMEZONE')
 datetime_jst_obj = datetime_utc_obj.astimezone(timezone_jst)
 print(datetime_jst_obj.strftime('[JST] %Y/%m/%d %H:%M:%S.%f'))
+
+
+#
+# dateutilでJSTのタイムゾーンの変更
+# 'Asia/Tokyo'などの名前でタイムゾーンを指定することが可能になる
+# 事前に、pip install python-dateutil が必要（AWS Lambdaにはデフォルトで入ってる模様）
+#
+timezone_jst_util = gettz('Asia/Tokyo')
+datetime_jst_util_obj = datetime_utc_obj.astimezone(timezone_jst_util)
+print(datetime_jst_util_obj.strftime('[JST-UTIL] %Y/%m/%d %H:%M:%S.%f'))
