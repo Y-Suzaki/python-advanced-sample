@@ -1,3 +1,6 @@
 pytz
 numpy
 python-dateutil
+flake8
+autopep8
+isort

@@ -4,6 +4,7 @@
 import logging
 from contextlib import contextmanager
 
+
 @contextmanager
 def set_log_debug_level():
     logger = logging.getLogger()
@@ -15,9 +16,11 @@ def set_log_debug_level():
     finally:
         logger.setLevel(old_log_level)
 
+
 def log(message):
     logging.debug('debug:' + message)
     logging.info('info:' + message)
+
 
 # debug、info共に出力される
 with set_log_debug_level():

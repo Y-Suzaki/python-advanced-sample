@@ -2,6 +2,7 @@ from contextlib import contextmanager
 
 # with分を使って、アクセスライブラリのClose漏れを防ぐ
 
+
 class S3Client:
     def __init__(self):
         print('init')
@@ -12,6 +13,7 @@ class S3Client:
     def close(self):
         print('close.')
 
+
 @contextmanager
 def s3_helper():
     s3_client = S3Client()
@@ -20,6 +22,7 @@ def s3_helper():
         print('end yield.')
     finally:
         s3_client.close()
+
 
 # ジェネレータで返された値は、asで受け取ることができる
 with s3_helper() as client:
