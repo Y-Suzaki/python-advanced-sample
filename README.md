@@ -12,7 +12,7 @@
     * Name：flake8
     * File Type：Python
     * Program： （flake8へのパスを通す。）
-    * Arguments：$FilePath$ --config=$ProjectFileDir$\.flake8
+    * Arguments：$FilePath$ --config=$ProjectFileDir$.flake8
     * Advance Options
         * Auto-save edited files to trigger the watcher：OFF
 
