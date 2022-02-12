@@ -1,5 +1,7 @@
 pytz
 numpy
+pandas
+matplotlib
 python-dateutil
 flake8
 autopep8

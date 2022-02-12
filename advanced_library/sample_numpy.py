@@ -1,7 +1,5 @@
 import os
-
 import numpy
-
 from sample_threading import loop_print
 
 ar = numpy.asarray([1, 4, 5, 2, 9, 3])
