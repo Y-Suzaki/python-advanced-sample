@@ -43,3 +43,15 @@ import文をソートしてくれるライブラリ。
     * Arguments：$FilePath$
     * Advance Options
         * Auto-save edited files to trigger the watcher：OFF
+
+## Mypy
+型ヒントの静的解析をサポートするライブラリ
+* install
+    ```
+    pip install mypy
+    ```
+
+* IntelliJの設定
+    1. Plugin Mypyのインストール
+    2. 設定メニューにMypyが追加されているので、パラメータを指定。
+        * Path to Mypy executable」に「※プロジェクトのパス※/venv/bin/mypy」を指定。
