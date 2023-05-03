@@ -55,6 +55,10 @@ def main() -> None:
     # 以下は型が違う警告になる。
     print_alert_event(crash_event)
 
+    # 型エイリアスは型に別名を別名を与えるだけなので、似ているが別物。
+    crash_event_type = dict[str, dict[str, str]]
+    crash_1: crash_event_type = {"test": {"a": "a1"}}
+
 
 if __name__ == '__main__':
     main()

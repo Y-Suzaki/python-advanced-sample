@@ -6,3 +6,5 @@ python-dateutil
 flake8
 autopep8
 isort
+pyyaml
+pydantic

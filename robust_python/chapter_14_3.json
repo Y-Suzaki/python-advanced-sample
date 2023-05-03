@@ -1,0 +1,9 @@
+{
+  "date_time": "2023-03-01T00:00:00Z",
+  "lat": 35.1,
+  "lng": 145.1,
+  "address": {
+    "city": "tokyo",
+    "building": 100
+  }
+}

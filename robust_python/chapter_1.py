@@ -2,6 +2,7 @@
 
 from collections import defaultdict
 from dataclasses import dataclass
+from typing import Any
 
 
 @dataclass
@@ -10,7 +11,7 @@ class Cookbook:
 
 
 def create_author_count_mapping(cookbooks: list[Cookbook]):
-    counter = defaultdict(lambda: 0)
+    counter: defaultdict[Any, int] = defaultdict(lambda: 0)
     for cookbook in cookbooks:
         counter[cookbook.autor] += 1
     return counter

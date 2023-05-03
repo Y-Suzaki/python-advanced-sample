@@ -12,7 +12,7 @@
     * Name：flake8
     * File Type：Python
     * Program： （flake8へのパスを通す。）
-    * Arguments：$FilePath$ --config=$ProjectFileDir$.flake8
+    * Arguments：$FilePath$ --config=$ProjectFileDir$/.flake8
     * Advance Options
         * Auto-save edited files to trigger the watcher：OFF
 
@@ -55,3 +55,10 @@ import文をソートしてくれるライブラリ。
     1. Plugin Mypyのインストール
     2. 設定メニューにMypyが追加されているので、パラメータを指定。
         * Path to Mypy executable」に「※プロジェクトのパス※/venv/bin/mypy」を指定。
+        
+## pydantic
+データ型を実行時にチェックするライブラリ
+* install
+    ```
+    pip install pydantic
+    ```
