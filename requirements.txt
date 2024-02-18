@@ -8,3 +8,4 @@ autopep8
 isort
 pyyaml
 pydantic
+Twisted
